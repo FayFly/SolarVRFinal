@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc7ccaae1056b04a9d8fafddac4927e, type: 3}
+  m_Name: Notes_Sun
+  m_EditorClassIdentifier: 
+  planetName: Sun
+  lines:
+  - 'Name: Sun'
+  - 'Category: Star'
+  - 'Diameter: Approximately 1,392,684 km'
+  - 'Rotation Period: About 25 - 35 days (varies with latitude)'
+  - 'Rotation Period: About 25 - 35 days (varies with latitude)'
+  - 'Main Components: Hydrogen (about 75%), Helium (about 24%), and other elements'
+  - 'Celestial Features: The center of the Solar System, providing the light and
+    heat necessary for life on Earth.'
+  audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}

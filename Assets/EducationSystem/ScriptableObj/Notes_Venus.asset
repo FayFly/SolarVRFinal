@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: Venus
   lines:
-  - Venus is the second planet
-  - Venus is the second planet
-  - Venus is the second planet
-  audioClip: {fileID: 8300000, guid: 9b225ef4f19cf441f8d7df84ea0f21ad, type: 3}
+  - 'Name: Venus'
+  - 'Category: Terrestrial planet'
+  - 'Diameter: 12,104 km'
+  - 'Orbital Period: 225 Earth days'
+  - 'Rotation Period: -243 Earth days (retrograde rotation)'
+  - 'Main Components: Rock'
+  - 'Celestial Features: Extreme greenhouse effect, very high surface temperatures.'
+  audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}

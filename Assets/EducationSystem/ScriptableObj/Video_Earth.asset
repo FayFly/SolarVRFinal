@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d933b904c8cb3f643b14cda3b36e4dba, type: 3}
   m_Name: Video_Earth
   m_EditorClassIdentifier: 
-  clip: {fileID: 32900000, guid: b9120bcd27321fe4ebb3dc1135eabece, type: 3}
+  isUrl: 0
+  clip: {fileID: 32900000, guid: fbaa12b52997b60459c40ca36cbde7a5, type: 3}
+  videoUrl: 

@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: Earth
   lines:
-  - Earth is the third planet in the solar system.
-  - Earth has a moon.
-  audioClip: {fileID: 8300000, guid: ffcac3d6adf3c4a5a9fceb69ed040b5f, type: 3}
+  - 'Name: Earth         '
+  - 'Category: Terrestrial planet'
+  - 'Diameter: 12,742 km'
+  - 'Orbital Period: 365.25 Earth days'
+  - 'Rotation Period: 1 Earth day'
+  - 'Main Components: Rock'
+  - 'Celestial Features: The only planet in the Solar System known to support life.'
+  audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}

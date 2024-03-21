@@ -50,12 +50,12 @@ public class CameraSystemControl : MonoBehaviour
         //overSystemCam = GameObject.FindWithTag("OverSystemCam");
         //moonEarthCam = GameObject.FindWithTag("MoonEarthCam");
         //sunEarthCam = GameObject.FindWithTag("SunEarthCam");
-        earthSunCam = transform.GetChild(0).gameObject;
-        earthMoonCam = transform.GetChild(1).gameObject;
-        overEarthCam = transform.GetChild(2).gameObject;
-        overSystemCam = transform.GetChild(3).gameObject;
-        moonEarthCam = transform.GetChild(4).gameObject;
-        sunEarthCam = transform.GetChild(5).gameObject;
+        earthMoonCam = transform.GetChild(0).gameObject;
+        moonEarthCam = transform.GetChild(1).gameObject;
+        sunEarthCam = transform.GetChild(2).gameObject;
+        earthSunCam = transform.GetChild(3).gameObject;
+        overEarthCam = transform.GetChild(4).gameObject;
+        overSystemCam = transform.GetChild(5).gameObject; 
         SetEarthSunCam();
         SetEarthMoonCam();
         SetOverEarthCam();

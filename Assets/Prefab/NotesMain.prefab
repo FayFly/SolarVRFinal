@@ -90,6 +90,11 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6204572250016642825, guid: 2e2e0836efcf1a64b9ae0d9727d7a7ab,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6204572250016642827, guid: 2e2e0836efcf1a64b9ae0d9727d7a7ab,
         type: 3}
       propertyPath: m_Name

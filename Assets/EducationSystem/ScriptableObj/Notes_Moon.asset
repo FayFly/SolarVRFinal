@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc7ccaae1056b04a9d8fafddac4927e, type: 3}
+  m_Name: Notes_Moon
+  m_EditorClassIdentifier: 
+  planetName: Moon
+  lines:
+  - 'Name: Moon'
+  - 'Category: Earth''s satellite'
+  - 'Diameter: 3,474 km'
+  - 'Orbital Period: 27.3 Earth days'
+  - 'Rotation Period: 27.3 Earth days (tidally locked)'
+  - 'Main Components: Rock'
+  - 'Celestial Features: Earth''s only natural satellite, with a surface marked by
+    many craters.'
+  audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
