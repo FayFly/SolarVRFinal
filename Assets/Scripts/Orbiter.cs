@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-
 public class Orbiter : MonoBehaviour
 {
     Transform planet;
@@ -14,7 +13,6 @@ public class Orbiter : MonoBehaviour
         planet = GetComponent<Transform>();
         initAxis = Quaternion.Euler(planet.eulerAngles) * Vector3.up;
     }
-
     // Update is called once per frame
     void Update()
     {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class CameraSystemControl : MonoBehaviour
 {
     public GameObject earth;
@@ -70,7 +69,6 @@ public class CameraSystemControl : MonoBehaviour
         SetNightLightEarth();
         SetNightLightMoon();
     }
-
     // Update is called once per frame
     void Update()
     {

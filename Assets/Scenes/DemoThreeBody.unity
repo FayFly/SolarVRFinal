@@ -536,7 +536,7 @@ Transform:
   m_GameObject: {fileID: 159183523}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -300}
+  m_LocalPosition: {x: 0, y: 0, z: -200}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -628,7 +628,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159183523}
   serializedVersion: 4
-  m_Mass: 100000
+  m_Mass: 20000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1700,7 +1700,7 @@ Transform:
   m_GameObject: {fileID: 291171509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 150, y: 0, z: 150}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1774,7 +1774,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291171509}
   serializedVersion: 4
-  m_Mass: 100000
+  m_Mass: 20000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4763,7 +4763,7 @@ Transform:
   m_GameObject: {fileID: 910930687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 400}
+  m_LocalPosition: {x: 0, y: 0, z: 200}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4837,7 +4837,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910930687}
   serializedVersion: 4
-  m_Mass: 100000
+  m_Mass: 20000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5483,17 +5483,17 @@ MonoBehaviour:
   setCelestialSystemsParams: 1
   calcInitVelocities: 0
   initPositions:
-  - {x: 0, y: 0, z: -300}
+  - {x: 0, y: 0, z: -400}
   - {x: 0, y: 0, z: 400}
-  - {x: 150, y: 0, z: 150}
+  - {x: 0, y: 0, z: 0}
   initVelocities:
-  - {x: 100, y: 10, z: 0}
-  - {x: 0, y: 0, z: 100}
-  - {x: -100, y: -30, z: 0}
+  - {x: 53.2727, y: 0, z: 34.7113}
+  - {x: 53.2727, y: 0, z: 34.7113}
+  - {x: -106.5454, y: 0, z: -69.4226}
   massArray:
-  - 100000
-  - 100000
-  - 100000
+  - 40000
+  - 40000
+  - 40000
   radiusArray:
   - 30
   - 30

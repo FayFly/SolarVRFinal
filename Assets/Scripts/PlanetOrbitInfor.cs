@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Rendering;
-
 public class PlanetOrbitInfor : MonoBehaviour
 {
     public float periPoint;
@@ -56,7 +55,6 @@ public class PlanetOrbitInfor : MonoBehaviour
         celectialSystemInit = GameObject.FindWithTag("emptyobjsysteminit");
         calculatedOrbitPeriod = CalcOrbitPeriod();
     }
-
     // Update is called once per frame
     void Update()
     {

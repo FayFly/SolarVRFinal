@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
-
 [ExecuteInEditMode]
 public class PlanetRing : MonoBehaviour
 {
@@ -12,13 +11,11 @@ public class PlanetRing : MonoBehaviour
     public float innerRadius = 0.7f;
     public float thickness = 0.5f;
     public Material ringMat;
-
     //cached references
     GameObject ring;
     Mesh ringMesh;
     MeshFilter ringMF;
     MeshRenderer ringMR;
-
     void OnEnable()
     {
         if (ring == null || ringMesh == null)
@@ -27,7 +24,6 @@ public class PlanetRing : MonoBehaviour
         }
         BuildRingMesh();
     }
-
     void OnValidate()
     {
         if (ring == null || ringMesh == null)
@@ -36,7 +32,6 @@ public class PlanetRing : MonoBehaviour
         }
         BuildRingMesh();
     }
-
     void SetUpRing()
     {
         //check if ring is null and there are no children
@@ -62,7 +57,6 @@ public class PlanetRing : MonoBehaviour
         ringMesh = new Mesh();
         ringMF.sharedMesh = ringMesh;
     }
-
     void BuildRingMesh()
     {
         //build ring mesh
@@ -70,19 +64,16 @@ public class PlanetRing : MonoBehaviour
         int[] triangles = new int[segments * 6 * 2];
         Vector2[] uv = new Vector2[(segments + 1) * 2 * 2];
         int halfway = (segments + 1) * 2;
-
         for (int i = 0; i < segments + 1; i++)
         {
             float progress = (float)i / (float)segments;
             float angle = Mathf.Deg2Rad * progress * 360;
             float x = Mathf.Sin(angle);
             float z = Mathf.Cos(angle);
-
             vertices[i * 2] = vertices[i * 2 + halfway] = new Vector3(x, 0f, z) * (innerRadius + thickness);
             vertices[i * 2 + 1] = vertices[i * 2 + 1 + halfway] = new Vector3(x, 0f, z) * innerRadius;
             uv[i * 2] = uv[i * 2 + halfway] = new Vector2(progress, 0f);
             uv[i * 2 + 1] = uv[i * 2 + 1 + halfway] = new Vector2(progress, 1f);
-
             if (i != segments)
             {
                 triangles[i * 12] = i * 2;
@@ -109,16 +100,12 @@ public class PlanetRing : MonoBehaviour
         ringMesh.uv = uv;
         ringMesh.RecalculateNormals();
     }
-
     // Start is called before the first frame update
     void Start()
     {
-        
     }
-
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
     }
 }

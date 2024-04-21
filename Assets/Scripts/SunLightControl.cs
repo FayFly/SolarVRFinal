@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
 public class SunLightControl : MonoBehaviour
 {
     //GameObject xrOrigin;
@@ -23,7 +22,6 @@ public class SunLightControl : MonoBehaviour
         transform.position = (earth.transform.position - Vector3.zero).normalized * 80;
         transform.LookAt(earth.transform.position);
     }
-
     private void Update()
     {
         transform.position = (earth.transform.position - Vector3.zero).normalized * 80;

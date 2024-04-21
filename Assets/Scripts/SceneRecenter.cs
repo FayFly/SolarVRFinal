@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class SceneRecenter : MonoBehaviour
 {
     // recenter the scene with XR Origin at (0,0,0).
     public float distanceThreshold = 1000f;
     List<Transform> planetsT;
     GameObject xrOrigin;
-
     public event System.Action PostFloatingOriginUpdate;
     private void Awake()
     {
@@ -21,7 +19,6 @@ public class SceneRecenter : MonoBehaviour
             planetsT.Add(obj1.transform);
         }
     }
-
     private void LateUpdate()
     {
         RecenterOrigin();
@@ -30,7 +27,6 @@ public class SceneRecenter : MonoBehaviour
             PostFloatingOriginUpdate();
         }
     }
-
     void RecenterOrigin()
     {
         Vector3 originOffset = xrOrigin.transform.position;

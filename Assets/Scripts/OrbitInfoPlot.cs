@@ -5,14 +5,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.HableCurve;
-
 [RequireComponent(typeof(LineRenderer))]
 public class OrbitInfoPlot : MonoBehaviour
 {
     public GameObject planet; // select one planet
     public bool isPlanetUpdated = false;
     public GameObject orbitTextPrefab;
-
     GameObject xrOrigin;
     LineRenderer lr;
     PlanetOrbitInfor planetOrbitInfor;
@@ -21,7 +19,6 @@ public class OrbitInfoPlot : MonoBehaviour
     GameObject periodText;
     bool showOrbitInfo = false;
     bool needUpdateInfo = true;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +26,6 @@ public class OrbitInfoPlot : MonoBehaviour
         InstantiateOrbitText();
         if (planet != null){planetOrbitInfor = planet.GetComponent<PlanetOrbitInfor>();}
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -47,7 +43,6 @@ public class OrbitInfoPlot : MonoBehaviour
             AlignOrienation(periodText);
         }
     }
-
     public void ToggleOrbitInfoPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -96,7 +91,6 @@ public class OrbitInfoPlot : MonoBehaviour
             periodText.transform.GetComponent<Text>().text = "Orbital Period: " + t;
             DrawLine();
         }
-
     }
     void DrawLine()
     {
@@ -106,7 +100,6 @@ public class OrbitInfoPlot : MonoBehaviour
         lr.positionCount = 2;
         lr.SetPositions(points);
     }
-    
     private void InstantiateOrbitText()
     {
         periPointText=Instantiate(orbitTextPrefab, new Vector3(0, 0, 0), Quaternion.identity);
@@ -121,7 +114,6 @@ public class OrbitInfoPlot : MonoBehaviour
         lr = GetComponent<LineRenderer>();
         lr.enabled = false;
     }
-
     public void AlignOrienation(GameObject obj)
     {
         Vector3 targetDir = (obj.transform.position - xrOrigin.transform.position).normalized;

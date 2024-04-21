@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class CameraSystemControlGen : MonoBehaviour
 {
     GameObject toBeActiveCam;
@@ -17,7 +16,6 @@ public class CameraSystemControlGen : MonoBehaviour
         camCount = 0;
 
     }
-
     // Update is called once per frame
     void Update()
     {

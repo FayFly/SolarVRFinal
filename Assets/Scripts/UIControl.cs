@@ -17,7 +17,6 @@ public class UIControl : MonoBehaviour
     public Slider playerHeightSlider;
     public GameObject planetButtonPrefab;
     GameObject planetButtonsParent;
-
     private bool activeMainUI = false;
     private bool isDefSkybox = true;
     private float scale = 1.0f;

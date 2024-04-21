@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [ExecuteInEditMode]
 //[RequireComponent(typeof(Rigidbody))]
 public class CelestialSystemInit : MonoBehaviour
@@ -18,7 +17,6 @@ public class CelestialSystemInit : MonoBehaviour
     public bool isElliptic = false;
     [Range(0.2f, 1.8f)]
     public float ellipticRatio=1.0f;
-
     GameObject[] bodies;
     private float satelliteRatio = 0f;
     private void Awake()
@@ -29,7 +27,6 @@ public class CelestialSystemInit : MonoBehaviour
             //Debug.Log(bodies[i].name);
             celestialBodies[i] = bodies[i].name;
         }
-
         if (setCelestialSystemsParams) {
             for (int i=0; i<bodies.Length; i++) {
                 Rigidbody rb = bodies[i].GetComponent<Rigidbody>();
@@ -49,19 +46,16 @@ public class CelestialSystemInit : MonoBehaviour
             }
         }
     }
-
     private GameObject[] FindObjsWithTagOrdered(string tag)
     {
         GameObject[] foundObs = GameObject.FindGameObjectsWithTag(tag);
         Array.Sort(foundObs, CompareObNames);
         return foundObs;
     }
-
     private int CompareObNames(GameObject x, GameObject y)
     {
         return x.name.CompareTo(y.name);
     }
-
     private Vector3 CalcInitialVelocity(int i)
     {
         float kratio;

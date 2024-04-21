@@ -5,7 +5,6 @@ using Unity.XR.CoreUtils;
 using UnityEngine;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using static UnityEngine.GraphicsBuffer;
-
 public class CelestialGravity : MonoBehaviour
 {
     public bool containsSatellites = false;
@@ -79,7 +78,6 @@ public class CelestialGravity : MonoBehaviour
             }
         }
     }
-
     // function to calculate initial velocity (not used)
     void InitialVelocityCircular(){
         foreach (GameObject obj1 in celestials){
@@ -93,7 +91,6 @@ public class CelestialGravity : MonoBehaviour
             }
         }
     }
-
     // function to calculate initial velocity (not used)
     void InitialVelocityElliptic(){
         foreach (GameObject obj1 in celestials){
@@ -108,7 +105,6 @@ public class CelestialGravity : MonoBehaviour
             }
         }
     }
-
     // function to Auto Orient a Object (not used)
     void AutoOrient(Vector3 down){
         float autoOrientSpeed = 1f;

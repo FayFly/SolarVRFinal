@@ -13,7 +13,6 @@ public class MiscTextUpdate : MonoBehaviour
         textfield = sliderText.GetComponent<Text>();
         textfield.text = slider.value.ToString();
     }
-
     // Update is called once per frame
     void Update() {
         textfield.text = slider.value.ToString();

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [ExecuteInEditMode]
 [RequireComponent(typeof(Rigidbody))]
 public class CelestialBody : MonoBehaviour
@@ -16,9 +15,7 @@ public class CelestialBody : MonoBehaviour
     public float mass = 1.0f;
     public Vector3 initPos = Vector3.zero;
     public Vector3 initVelocity = Vector3.zero;
-    
     Rigidbody rb;
-
     void Awake() {
         rb = GetComponent<Rigidbody>();
         if (setInitParams) {
@@ -28,7 +25,6 @@ public class CelestialBody : MonoBehaviour
             this.transform.localScale = Vector3.one * radius;
         }
     }
-
     public void CalculateGravity(CelestialBody[] allBodies)
     {
         foreach (CelestialBody otherBody in allBodies)
@@ -42,7 +38,6 @@ public class CelestialBody : MonoBehaviour
             }
         }
     }
-
     public void UpdateVelocity(CelestialBody[] allBodies, float timeStep)
     {
         foreach (CelestialBody otherBody in allBodies)
@@ -56,7 +51,6 @@ public class CelestialBody : MonoBehaviour
             }
         }
     }
-
     public void UpdatePosition(float timeStep)
     {
         rb.MovePosition(rb.position + rb.velocity * timeStep);

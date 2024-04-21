@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using UnityEngine.InputSystem;
-
 public class NotesControl : MonoBehaviour
 {
     public GameObject planet;
@@ -14,7 +13,6 @@ public class NotesControl : MonoBehaviour
     public AudioSource audioSource;
     public VideoPlayer videoPlayer;
     AudioSource videoPlayerAudioSource;
-
     private bool activeNotesUI = false;
     private bool activeScreenUI = false;
     private bool activeNotesParent = false;

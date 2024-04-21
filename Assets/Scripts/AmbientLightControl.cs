@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
 public class AmbientLightControl : MonoBehaviour
 {
     public float maxIntensity = 1.0f;
     SunLightControl sunLight;
     GameObject xrOrigin;
     Light ambientLight;
-
     const float rotationSpeed = 0.2f;
     // Start is called before the first frame update
     void Start() {

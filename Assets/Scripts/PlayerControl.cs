@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
-
 public class Player : MonoBehaviour
 {
     public GameObject planet; // select one planet
