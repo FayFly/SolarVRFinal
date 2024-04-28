@@ -34,6 +34,7 @@ public class UIControl : MonoBehaviour
     float initialFov;
     GameObject cameraSystems;
     CameraSystemControl cameraSystemCtrl;
+    CameraSystemControlGen cameraSystemCtrlGen;
     GameObject cameraButtonsParent;
     int cameraCounts;
     // Start is called before the first frame update
@@ -51,13 +52,15 @@ public class UIControl : MonoBehaviour
         orbitInfoPlotScript = orbitInfoPlot.GetComponent<OrbitInfoPlot>();
         playerControlScript = playerControl.GetComponent<Player>();
         notesMainScript = notesMain.GetComponent<NotesControl>();
-        planetButtonsParent = mainUI.transform.GetChild(1).GetChild(2).gameObject;
+        planetButtonsParent = mainUI.transform.GetChild(1).GetChild(3).gameObject;
         InstantiatePlanetButtons();
         cameraSystems = GameObject.FindWithTag("CustomCameras");
         if (cameraSystems != null) { 
-            cameraSystemCtrl = cameraSystems.GetComponent<CameraSystemControl>(); 
+            cameraSystemCtrl = cameraSystems.GetComponent<CameraSystemControl>();
+            if (cameraSystemCtrl == null) {
+                cameraSystemCtrlGen = cameraSystems.GetComponent<CameraSystemControlGen>(); }
             cameraCounts = cameraSystems.transform.childCount;
-            cameraButtonsParent = mainUI.transform.GetChild(2).GetChild(2).gameObject;
+            cameraButtonsParent = mainUI.transform.GetChild(2).GetChild(3).gameObject;
             InstantiateCameraButtons();
         }
         else { cameraCounts = 0; }
@@ -163,7 +166,10 @@ public class UIControl : MonoBehaviour
     }
     public void SelectCustomCam(int i)
     {
-        cameraSystemCtrl.camIndex = i;
+        if(cameraSystemCtrl != null) {
+            cameraSystemCtrl.camIndex = i;
+        } else { cameraSystemCtrlGen.camIndex = i; }
+        
     }
     private GameObject[] FindObjsWithTagOrdered(string tag)
     {
