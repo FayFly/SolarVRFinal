@@ -52,7 +52,7 @@ public class UIControl : MonoBehaviour
         orbitInfoPlotScript = orbitInfoPlot.GetComponent<OrbitInfoPlot>();
         playerControlScript = playerControl.GetComponent<Player>();
         notesMainScript = notesMain.GetComponent<NotesControl>();
-        planetButtonsParent = mainUI.transform.GetChild(1).GetChild(3).gameObject;
+        planetButtonsParent = mainUI.transform.GetChild(1).GetChild(4).gameObject;
         InstantiatePlanetButtons();
         cameraSystems = GameObject.FindWithTag("CustomCameras");
         if (cameraSystems != null) { 
@@ -60,7 +60,7 @@ public class UIControl : MonoBehaviour
             if (cameraSystemCtrl == null) {
                 cameraSystemCtrlGen = cameraSystems.GetComponent<CameraSystemControlGen>(); }
             cameraCounts = cameraSystems.transform.childCount;
-            cameraButtonsParent = mainUI.transform.GetChild(2).GetChild(3).gameObject;
+            cameraButtonsParent = mainUI.transform.GetChild(2).GetChild(4).gameObject;
             InstantiateCameraButtons();
         }
         else { cameraCounts = 0; }

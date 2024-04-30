@@ -50,7 +50,7 @@ public class OrbitInfoPlot : MonoBehaviour
             TogglePlot();
         }
     }
-    void TogglePlot()
+    public void TogglePlot()
     {
         if (showOrbitInfo)
         {

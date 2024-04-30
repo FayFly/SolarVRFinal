@@ -22,4 +22,16 @@ MonoBehaviour:
   - 'Main Components: Rock'
   - 'Celestial Features: Earth''s only natural satellite, with a surface marked by
     many craters.'
+  - 
+  - 'Moon Phases: Describe the cyclic changes in the appearance of the moon from
+    Earth, ranging from the fully illuminated full moon to the completely dark new
+    moon.'
+  - 
+  - A lunar eclipse occurs when the Earth passes between the sun and the moon, casting
+    a shadow on the moon and temporarily altering its appearance.
+  - 
+  - 
+  - 
+  - 
+  - 
   audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}

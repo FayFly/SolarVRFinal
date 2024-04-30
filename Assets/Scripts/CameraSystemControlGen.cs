@@ -28,7 +28,7 @@ public class CameraSystemControlGen : MonoBehaviour
             ToggleCustomCam();
         }
     }
-    void ToggleCustomCam()
+    public void ToggleCustomCam()
     { // toggle between hide and show a custom camera
         if (isCustomCamEnabled)
         {
@@ -48,7 +48,7 @@ public class CameraSystemControlGen : MonoBehaviour
             BrowseCustomCam();
         }
     }
-    void BrowseCustomCam()
+    public void BrowseCustomCam()
     {
         if (camCount == 0)
         {
