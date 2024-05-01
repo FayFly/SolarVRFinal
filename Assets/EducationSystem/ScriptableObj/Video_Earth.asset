@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Video_Earth
   m_EditorClassIdentifier: 
   isUrl: 0
-  clip: {fileID: 32900000, guid: fbaa12b52997b60459c40ca36cbde7a5, type: 3}
+  clip: {fileID: 32900000, guid: 6c11e603119bc044abe34031c740c16b, type: 3}
   videoUrl: 

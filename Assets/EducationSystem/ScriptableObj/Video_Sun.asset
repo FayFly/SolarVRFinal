@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Video_Sun
   m_EditorClassIdentifier: 
   isUrl: 0
-  clip: {fileID: 32900000, guid: 7fe977018e5e5bc42b18ce0cacbfd3f3, type: 3}
+  clip: {fileID: 32900000, guid: bd8395646b71bb640b504e58b77c8763, type: 3}
   videoUrl: 

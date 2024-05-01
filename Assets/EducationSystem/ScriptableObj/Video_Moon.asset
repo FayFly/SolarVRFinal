@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Video_Moon
   m_EditorClassIdentifier: 
   isUrl: 0
-  clip: {fileID: 32900000, guid: f7d46d8398cd9aa48addbdbdf14639f4, type: 3}
+  clip: {fileID: 32900000, guid: 87e4efec009613b41b69aa5d4a9e9569, type: 3}
   videoUrl: 

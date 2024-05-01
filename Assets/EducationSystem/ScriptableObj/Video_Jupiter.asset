@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Video_Jupiter
   m_EditorClassIdentifier: 
   isUrl: 0
-  clip: {fileID: 32900000, guid: fbff08afd41d4bd4681bdbcf20948422, type: 3}
+  clip: {fileID: 32900000, guid: d3052e4fa554fae4faf3f74c97dfc679, type: 3}
   videoUrl: 

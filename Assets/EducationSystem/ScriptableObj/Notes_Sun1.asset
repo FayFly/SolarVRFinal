@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc7ccaae1056b04a9d8fafddac4927e, type: 3}
   m_Name: Notes_Sun1
   m_EditorClassIdentifier: 
-  planetName: 
+  planetName: Sun1
   lines: []
   audioClip: {fileID: 0}
