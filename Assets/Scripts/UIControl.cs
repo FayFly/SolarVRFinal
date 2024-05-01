@@ -12,12 +12,12 @@ public class UIControl : MonoBehaviour
     public string nextScene;
     public Material defSkyMat;
     public Material otherSkyMat;
-    public GameObject fovSliderobj;
-    public GameObject playerScaleSliderobj;
-    public GameObject playerHeightSliderobj;
-    Slider fovSlider;
-    Slider playerScaleSlider;
-    Slider playerHeightSlider;
+    //public GameObject fovSliderobj;
+    //public GameObject playerScaleSliderobj;
+    //public GameObject playerHeightSliderobj;
+    public Slider fovSlider;
+    public Slider playerScaleSlider;
+    public Slider playerHeightSlider;
     public GameObject planetButtonPrefab;
     GameObject planetButtonsParent;
     private bool activeMainUI = false;
@@ -67,9 +67,9 @@ public class UIControl : MonoBehaviour
             InstantiateCameraButtons();
         }
         else { cameraCounts = 0; }
-        fovSlider = fovSliderobj.GetComponent<Slider>();
-        playerScaleSlider = playerScaleSliderobj.GetComponent<Slider>();
-        playerHeightSlider = playerHeightSliderobj.GetComponent<Slider>();
+        //fovSlider = fovSliderobj.GetComponent<Slider>();
+        //playerScaleSlider = playerScaleSliderobj.GetComponent<Slider>();
+        //playerHeightSlider = playerHeightSliderobj.GetComponent<Slider>();
     }
     public void Update()
     {

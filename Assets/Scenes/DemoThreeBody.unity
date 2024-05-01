@@ -11773,12 +11773,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1072746066}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1072746068 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8026251580362772246, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
+--- !u!114 &1072746068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8026251580362772244, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
     type: 3}
   m_PrefabInstance: {fileID: 1072746066}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1091834703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12084,12 +12090,6 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!1 &1098274570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8026251580362772246, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
-    type: 3}
-  m_PrefabInstance: {fileID: 5461166774793510745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1113120029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14376,12 +14376,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1467886051}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1467886053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8026251580362772246, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
+--- !u!114 &1467886053 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8026251580362772244, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
     type: 3}
   m_PrefabInstance: {fileID: 1467886051}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1470573843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18163,9 +18169,9 @@ MonoBehaviour:
   nextScene: MainScene
   defSkyMat: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
   otherSkyMat: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
-  fovSliderobj: {fileID: 1098274570}
-  playerScaleSliderobj: {fileID: 1072746068}
-  playerHeightSliderobj: {fileID: 1467886053}
+  fovSlider: {fileID: 5461166774793510746}
+  playerScaleSlider: {fileID: 1072746068}
+  playerHeightSlider: {fileID: 1467886053}
   planetButtonPrefab: {fileID: 7101995793613029783, guid: f1c9dbe0b51acf042b3fc8c16ee7cae4,
     type: 3}
   notesMain: {fileID: 1113120031}
@@ -20103,6 +20109,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab, type: 3}
+--- !u!114 &5461166774793510746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8026251580362772244, guid: dcf08ed11b3ef3545b3ffcfbc69a1aab,
+    type: 3}
+  m_PrefabInstance: {fileID: 5461166774793510745}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6064894683235115490
 PrefabInstance:
   m_ObjectHideFlags: 0
